@@ -1,0 +1,15 @@
+*
+!fonts/
+!js/
+!res/
+!css/
+!img/
+!fonts/*
+!js/*
+!res/*
+!css/*
+!img/*
+!img/*/*
+!img/*/*/*
+!index.html
+!.gitignore

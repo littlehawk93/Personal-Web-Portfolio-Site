@@ -1,0 +1,280 @@
+
+/*
+ * Global CSS #####################################################################################################################
+ */
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+@media(min-width:767px) {
+
+	.navbar.navbar-default {
+		background: none;
+		padding: 20px 0px;
+		-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+	}
+}
+
+.navbar.navbar-default.top-nav-collapse {
+	background: #2C3E50;
+	padding: 0px;
+}
+
+section {
+	display: table;
+	width: 100%;
+	min-height: 100%;
+	padding: 70px 0px 40px 0px;
+	-moz-box-shadow: inset 0 0 20px 1px #000;
+	-webkit-box-shadow: inset 0 0 20px 1px #000;
+	box-shadow: inset 0 0 20px 1px #000;
+}
+
+@media(min-width:992px) {
+
+	section {
+		-moz-box-shadow: inset 0 0 100px 10px #000;
+		-webkit-box-shadow: inset 0 0 100px 10px #000;
+		box-shadow: inset 0 0 100px 10px #000;
+	}
+}
+
+section.dark {
+	background-color: #2C3E50;
+
+}
+
+section.dark-pattern {
+	background: #2C3E50 url("../img/pattern-dark.png") repeat top left;
+
+}
+
+section.light-pattern {
+	background: #EDEDED url("../img/pattern-light.png") repeat top left;
+}
+
+section.light {
+	background-color: #EDEDED;
+}
+
+section.dark *, section.dark-pattern * {
+	color: #FFFFFF;
+}
+
+section.dark p > a, section.dark-pattern p > a, section.light p > a, section.light-pattern p > a {
+	color: #18bc9c;
+}
+
+section.light *, section.light * {
+	color: #2C3E50;
+}
+
+section.light hr, section.light-pattern hr  {
+	border-top: 1px solid #2C3E50;
+}
+
+section > div.body {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.jumbotron {
+	background: none;
+}
+
+section .jumbotron > p {
+	font-weight: 300;
+}
+
+/*
+ * Navbar CSS ############################################################################################################################
+ */
+
+.navbar.navbar-default a.navbar-brand {
+	position: relative;
+	overflow: hidden;
+}
+
+.navbar.navbar-default ul li > a {
+	display: block;
+	min-width: 120px;
+	padding-left: 0px;
+	padding-right: 0px;
+	overflow: hidden;
+	position: relative;
+}
+
+.navbar.navbar-default .hidden-xs ul li > a {
+	text-align: center;
+}
+
+/*
+ * Intro Section CSS #####################################################################################################################
+ */
+
+section#intro {
+	background: #444 url("../img/wallpaper.jpg") no-repeat top center;
+	background-size: cover;
+}
+
+section#intro .jumbotron > * {
+	font-weight: 300;
+	text-shadow: 0px 0px 10px #000;
+}
+
+/*
+ * Contact Section CSS #####################################################################################################################
+ */
+
+section#contact div.body div.container div.row {
+	margin-bottom: 25px;
+}
+
+@media(max-width:767px) {
+
+	section#contact div.body div.container div.row div img.img-responsive {
+		padding: 0px 75px;
+	}
+}
+
+@media(max-width:992px) {
+
+	section#contact div.body div.container div.row div img.img-responsive {
+		padding: 0px 30px;
+	}
+}
+
+/*
+ * Projects Section CSS #####################################################################################################################
+ */
+
+section#projects div.body div.container > h2 {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 40px;
+	padding: 0px;
+}
+
+section#projects div.body div.container div.row > div.col-md-4 {
+	margin-bottom: 20px;
+}
+
+section#projects a {
+	text-decoration: none;
+	color: #2C3E50;
+}
+
+section#projects div.project-card {
+	cursor: pointer;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 300px;
+	background-color: #FFF;
+}
+
+section#projects div.project-thumb {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 200px;
+	background-color: #FAFAFA;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	z-index: 11;
+	border-bottom: 1px solid #2C3E50;
+}
+
+section#projects div.project-card div.project-title {
+	display: block;
+	width: 100%;
+	padding-top: 200px;
+	z-index: 10;
+}
+
+section#projects div.project-title > * {
+	text-align: center;
+	margin: 0px auto;
+	padding: 10px 0px;
+}
+
+section#projects div.project-card div.project-thumb#quadtree {
+	background-image: url("../img/projects/quad-tree-thumb2.jpg");
+}
+
+section#projects div.project-card div.project-thumb#steg {
+	background-image: url("../img/projects/steg-thumb2.jpg");
+}
+
+section#projects div.project-card div.project-thumb#cygnus {
+	background-image: url("../img/projects/cygnus-thumb.jpg");
+}
+
+section#projects div.project-card div.project-thumb#geochest {
+	background-image: url("../img/projects/geochest-thumb.jpg");
+}
+
+section#projects div.project-card div.project-thumb#peregrine {
+	background-image: url("../img/projects/peregrine-thumb.jpg");
+}
+
+section#projects div.project-card div.project-thumb#kingfisher {
+	background-image: url("../img/projects/kingfisher-thumb.jpg");
+}
+
+section#projects div.project-card div.project-thumb#skypi {
+	background-image: url("../img/projects/skypi-thumb.jpg");
+}
+
+/*
+ * Modal CSS #####################################################################################################################
+ */
+
+div.site-modal {	
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+div.site-modal div.close-modal > span {
+	cursor: pointer;
+	position: absolute;
+	top: 25px;
+	right: 25px; 
+	color: #EDEDED;
+	font-size: 4.0em;
+	font-weight: 100;
+}
+
+div.site-modal div.modal-content {
+	width: 100%;
+	min-height: 100%;
+	border: 0px;
+	border-radius: 0px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background-clip: border-box;
+	padding-top: 90px;
+}
+
+/*
+ * About CSS #####################################################################################################################
+ */
+
+section#about img {
+	border-radius: 5px;
+	-moz-box-shadow:0 0 25px 0px #000;
+	-webkit-box-shadow: 0 0 25px 0px #000;
+	box-shadow: 0 0 25px 0px #000;
+}
