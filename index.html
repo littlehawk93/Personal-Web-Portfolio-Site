@@ -28,7 +28,6 @@
 	    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 	    <link rel="stylesheet" href="./css/bootstrap.min.css">
 	    <link rel="stylesheet" href="./css/hawkins.css">
-	    <link rel="stylesheet" href="./css/ripple.css">
 	    
 	</head>
 	<body id="pagetop">
@@ -68,19 +67,19 @@
 	            <div class="hidden-xs">
 		            <nav class="navbar-right" role="navigation">
 		                <ul class="nav navbar-nav">
-		                    <li class="ripple">
+		                    <li >
 		                        <a class="page-scroll" href="#about">About Me</a>
 		                    </li>
-		                    <li class="ripple">
+		                    <li >
 		                        <a class="page-scroll" href="#education">Education</a>
 		                    </li>
-		                    <li class="ripple">
+		                    <li >
 		                        <a class="page-scroll" href="#projects">Projects</a>
 		                    </li>
-		                    <li class="ripple">
+		                    <li >
 		                        <a class="page-scroll" href="#resume">Résumé</a>
 		                    </li>
-		                    <li class="ripple">
+		                    <li >
 		                        <a class="page-scroll" href="#contact">Contact</a>
 		                    </li>
 		                </ul>
@@ -207,8 +206,7 @@
 			<div class="body">
 				<div class="container">
 					
-					<h2>My Projects</h2>
-					
+					<h2>My Projects<br /><small>Select a project from below to learn more about it</small></h2>
 					<div class="row">
 						<div class="col-sm-6 col-md-4">
 							<div class="project-card" data-target="#projectModal1" data-toggle="modal">
@@ -579,19 +577,11 @@
 			
 			$('section#projects div.col-md-4 div.project-card')
 			    .on('mouseenter', function(){
-			        $(this).children("div.project-thumb").stop().animate ({height:"100%"},"slow");
+			        $(this).children("div.project-thumb").stop().animate ({height:"200px"},"fast");
 			    })
 			    .on('mouseleave', function(){
-			        $(this).children("div.project-thumb").stop().animate ({height:"200px"},"slow");
+			        $(this).children("div.project-thumb").stop().animate ({height:"100%"},"fast");
 			    });
-			
-			options = 
-			{
-			 	elements: 'li.ripple a, a.navbar-brand',
-			 	focus: 'li.ripple a, a.navbar-brand',
-			 	focusTimeout: 800
-			};
-			rippleEffect = new $.RippleEffect(options);
 			
 	    </script>
 	    
